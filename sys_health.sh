@@ -51,7 +51,7 @@ fi
 
 echo "---UPTIME REPORT---"
 
-LOAD_Avg=$(uptime | awk '{print $8 " " $9 " " $10}')
+LOAD_Avg=$(uptime | awk -F'load average: ' '{print $2}')
 UP_time=$(uptime | awk '{print $3}' | sed 's/,//')
 
 echo "Current LOAD AVERAGE: $LOAD_Avg"
