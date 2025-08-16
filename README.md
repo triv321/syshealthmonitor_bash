@@ -84,3 +84,5 @@ The script operates by executing standard Linux commands and then piping their o
     * The script uses `if [ "$VAR" -gt THRESHOLD ]; then ... fi` blocks to compare the calculated memory and disk usage percentages against predefined thresholds (e.g., 70% for memory).
     * Based on this comparison, it prints a user-friendly status message, such as "GOOD HEALTH" or "WARNING! HIGH USAGE."
 
+#LICENCE
+UNDER MIT LICENSE
